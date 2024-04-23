@@ -2,7 +2,7 @@ package com.example.DReport.Model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-@Document(value = "User")
+@Document(collection = "User")
 public class User {
     public Long getId() {
         return id;
@@ -47,5 +47,8 @@ public class User {
         this.name = name;
         this.taikhoan = taikhoan;
         this.matkhau = matkhau;
+    }
+
+    public User() {
     }
 }
